@@ -8,11 +8,11 @@
 		<relativePath></relativePath>
 	</parent>
 
-	<groupId>com.telecominfraproject</groupId>
-	<artifactId>tip-wlan-cloud-root-pom</artifactId>
+	<groupId>com.telecominfraproject.wlan</groupId>
+	<artifactId>cloud-root-pom</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>tip-wlan-cloud-root-pom</name>
+	<name>cloud-root-pom</name>
 	<description>Place to keep all common properties, dependencies, and settings</description>
 
 	<properties>
@@ -80,13 +80,14 @@
 
 	</dependencies>
 
-  <distributionManagement>
-    <repository>
-      <id>io.cloudrepo</id> <!-- Must Match the Unique Identifier in settings.xml -->
-      <name>TIP WLAN Cloud Repo</name>
-      <url>https://connectustechnologies.mycloudrepo.io/repositories/connectus_tip_cloud</url>
-    </repository>
-  </distributionManagement>
+	<distributionManagement>
+		<repository>
+			<!-- This is where releases/snapshots of artifacts are being uploaded/deployed -->
+			<id>io.cloudrepo</id> <!-- Must Match the Unique Identifier in settings.xml -->
+			<name>TIP WLAN Cloud Maven Repo</name>
+			<url>https://connectustechnologies.mycloudrepo.io/repositories/connectus_tip_cloud</url>
+		</repository>
+	</distributionManagement>
 
 	<repositories>
 		<repository>
@@ -97,16 +98,19 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-    <repository>
-      <!--
-      The username and password are retrieved by looking for the Repository
-      Id in the $HOME/.m2/settings.xml file.
-      -->
-      <!-- id Must Match the Unique Identifier in settings.xml -->
-      <id>io.cloudrepo</id>
-      <url>https://connectustechnologies.mycloudrepo.io/repositories/connectus_tip_cloud</url>
-      <releases/>
-    </repository>
+
+		<repository>
+			<!-- This is where releases/snapshots of artifacts are downloaded from -->
+			<!--
+			The username and password are retrieved by looking for the Repository
+			Id in the $HOME/.m2/settings.xml file.
+			-->
+
+			<!-- id Must Match the Unique Identifier in settings.xml -->
+			<id>io.cloudrepo</id>
+			<url>https://connectustechnologies.mycloudrepo.io/repositories/connectus_tip_cloud</url>
+			<releases/>
+		</repository>
 
 	</repositories>
 	<pluginRepositories>
