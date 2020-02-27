@@ -9,10 +9,10 @@
 	</parent>
 
 	<groupId>com.telecominfraproject.wlan</groupId>
-	<artifactId>cloud-root-pom</artifactId>
+	<artifactId>tip-wlan-cloud-root-pom</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>cloud-root-pom</name>
+	<name>tip-wlan-cloud-root-pom</name>
 	<description>Place to keep all common properties, dependencies, and settings</description>
 
 	<properties>
