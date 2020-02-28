@@ -19,10 +19,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<tip-wlan-cloud.release.version>0.0.1-SNAPSHOT</tip-wlan-cloud.release.version>
 		<guava.version>23.0</guava.version>
+                <apache.commons.math3.version>3.6.1</apache.commons.math3.version>
+                <seruco.base62.version>0.1.2</seruco.base62.version>
+                <aws.sdk.version>1.11.488</aws.sdk.version>
+                <netflix.servo.version>0.12.17</netflix.servo.version>
 
-		<!--TODO: remove the folowing line after converting dependencies! -->
-		<whizcontrol.release.version>0.0.1-SNAPSHOT</whizcontrol.release.version>
 	</properties>
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- common dependencies go here -->
