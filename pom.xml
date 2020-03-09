@@ -23,13 +23,17 @@
                 <seruco.base62.version>0.1.2</seruco.base62.version>
                 <aws.sdk.version>1.11.488</aws.sdk.version>
                 <netflix.servo.version>0.12.17</netflix.servo.version>
-
+				<apache.commons.text.version>1.2</apache.commons.text.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- common dependencies go here -->
-		</dependencies>
+             <dependency>
+                     <groupId>org.apache.commons</groupId>
+                     <artifactId>commons-text</artifactId>
+                     <version>${apache.commons.text.version}</version>
+             </dependency>
+   		</dependencies>
 	</dependencyManagement>
 
 	<dependencies>
