@@ -18,27 +18,27 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<tip-wlan-cloud.release.version>0.0.1-SNAPSHOT</tip-wlan-cloud.release.version>
-        <apache.commons.math3.version>3.6.1</apache.commons.math3.version>
-        <seruco.base62.version>0.1.2</seruco.base62.version>
-        <netflix.servo.version>0.12.17</netflix.servo.version>
+    <apache.commons.math3.version>3.6.1</apache.commons.math3.version>
+    <seruco.base62.version>0.1.2</seruco.base62.version>
+    <netflix.servo.version>0.12.17</netflix.servo.version>
 		<apache.commons.text.version>1.2</apache.commons.text.version>
 		<podam.version>6.0.3.RELEASE</podam.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
-             <dependency>
-                     <groupId>org.apache.commons</groupId>
-                     <artifactId>commons-text</artifactId>
-                     <version>${apache.commons.text.version}</version>
-             </dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-text</artifactId>
+				<version>${apache.commons.text.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>uk.co.jemos.podam</groupId>
 				<artifactId>podam</artifactId>
 				<version>${podam.version}</version>
 			</dependency>
-             
-   		</dependencies>
+
+		</dependencies>
 	</dependencyManagement>
 
 	<dependencies>
@@ -89,7 +89,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
@@ -106,9 +106,9 @@
 	<distributionManagement>
 		<repository>
 			<!-- This is where releases/snapshots of artifacts are being uploaded/deployed -->
-			<id>io.cloudrepo</id> <!-- Must Match the Unique Identifier in settings.xml -->
+			<id>tip-wlan-cloud-maven-repo</id> <!-- Must Match the Unique Identifier in settings.xml -->
 			<name>TIP WLAN Cloud Maven Repo</name>
-			<url>https://connectustechnologies.mycloudrepo.io/repositories/connectus_tip_cloud</url>
+			<url>https://tip.jfrog.io/artifactory/tip-wlan-cloud-maven-repo</url>
 		</repository>
 	</distributionManagement>
 
@@ -130,12 +130,13 @@
 			-->
 
 			<!-- id Must Match the Unique Identifier in settings.xml -->
-			<id>io.cloudrepo</id>
-			<url>https://connectustechnologies.mycloudrepo.io/repositories/connectus_tip_cloud</url>
+			<id>tip-wlan-cloud-maven-repo</id>
+			<url>https://tip.jfrog.io/artifactory/tip-wlan-cloud-maven-repo</url>
 			<releases/>
 		</repository>
 
 	</repositories>
+
 	<pluginRepositories>
 		<pluginRepository>
 			<id>spring-milestones</id>
@@ -242,4 +243,3 @@
 	</profiles>
 
 </project>
-
