@@ -82,7 +82,6 @@
 		<dependency>
 		    <groupId>com.github.ben-manes.caffeine</groupId>
 		    <artifactId>caffeine</artifactId>
-		    <version>2.7.0</version>
 		</dependency>
 
 		<dependency>
@@ -173,8 +172,8 @@
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>13</source>
+					<target>13</target>
 				</configuration>
 			</plugin>
 
@@ -232,9 +231,9 @@
 		</profile>
 
 		<profile>
-			<id>doclint-java8-disable</id>
+			<id>doclint-java13-disable</id>
 			<activation>
-				<jdk>[1.8,)</jdk>
+				<jdk>[13,)</jdk>
 			</activation>
 			<properties>
 				<javadoc.opts>-Xdoclint:none</javadoc.opts>
