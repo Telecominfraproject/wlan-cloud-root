@@ -107,6 +107,13 @@
 		  <version>1.4</version>
 		</dependency>
 
+        <!-- Tools for preventing Web Application security vulnerabilities such as Cross-Site Scripting -->
+		<dependency>
+		    <groupId>org.owasp.encoder</groupId>
+		    <artifactId>encoder</artifactId>
+		    <version>1.2.2</version>
+		</dependency>
+
 	</dependencies>
 
 	<distributionManagement>
