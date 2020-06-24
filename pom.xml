@@ -24,6 +24,7 @@
 		<apache.commons.text.version>1.2</apache.commons.text.version>
 		<podam.version>6.0.3.RELEASE</podam.version>
 		<pegdown.version>1.6.0</pegdown.version>
+		<cassandra.datastax.driver.version>4.7.2</cassandra.datastax.driver.version>
 	</properties>
 
 	<dependencyManagement>
