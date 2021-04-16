@@ -4,7 +4,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.0.RELEASE</version>
-		<relativePath />
+		<relativePath/>
 	</parent>
 
 	<groupId>com.telecominfraproject.wlan</groupId>
@@ -145,7 +145,7 @@
 			<!-- id Must Match the Unique Identifier in settings.xml -->
 			<id>tip-wlan-cloud-maven-repo</id>
 			<url>https://tip.jfrog.io/artifactory/tip-wlan-cloud-maven-repo</url>
-			<releases />
+			<releases/>
 		</repository>
 
 	</repositories>
